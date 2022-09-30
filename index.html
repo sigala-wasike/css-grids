@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRIDS</title>
+</head>
+<style>
+    
+</style>
+<link rel="stylesheet" href="style.css">
+<body>
+    <!-- GRIDS -->
+    <h1>LEARN ABOUT CSS GRIDS</h1>
+    <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+    <h3>GRID ELEMENTS</h3>
+    <P>A grid layout consists of a parent element, with one or more child elements.</P>
+    <h3>Display property</h3>
+    <p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
+    <h3>Grid Columns</h3>
+    <p>The vertical lines of grid items are called columns.</p>
+    <h3>Grid Rows</h3>
+    <p>The horizontal lines of grid items are called columns.</p>
+    <p>N/B All direct children of the grid container automatically become grid items.
+
+    </p>
+<h3>Grid Gaps</h3>
+<p>The spaces between each column/row are called gaps.</p>
+<p>You can adjust the gap size by using one of the following properties:</p>
+<ol>
+    <li>column-gaps</li>
+    <li>row-gaps</li>
+    <li>gaps</li>
+</ol>
+<h3>Grid Lines</h3>
+<p>The lines between columns are called column lines.
+
+    The lines between rows are called row lines.</p>
+    
+
+    <!-- CREATE A DIV ELEMENT -->
+    <h4>Grid Example</h4>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+      </div>
+      <hr>
+      <!-- CSS FLEXBOX -->
+      <h1 class="flex">FLEXBOX</h1>
+      <P>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+
+    </P>
+    <h2>Parent element (Container)</h2>
+    <p>this is a flex container (the red area) with five flex items:</p>
+    
+    </p>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <p>The flex container properties are:
+            <ol>
+                <li>flex-direction</li>
+                <li>flex-wrap</li>
+                <li>flex-flow</li>
+                <li>justify-content</li>
+                <li>align-items</li>
+                <li>align-content</li>
+            </ol>
+            <h3>The flex-direction Property</h3>
+            <p>The flex-direction property defines in which direction the container wants to stack the flex items, you can use row,column or reverse column</p>
+            <ol>
+                <li>The column value stacks the flex items vertically (from top to bottom):</li>
+                <li>The row value stacks the flex items horizontally (from left to right)</li>
+                <li>The column-reverse value stacks the flex items vertically (but from bottom to top)</li>
+                <li>The row-reverse value stacks the flex items horizontally (but from right to left)</li>
+            </ol>
+            <div class="flex-container 2" style="flex-direction:column;">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+            <h3>The flex-wrap Property</h3>
+            <p>The flex-wrap property specifies whether the flex items should wrap or not</p>
+            <p>The wrap value specifies that the flex items will wrap if necessary</p>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default)</p>
+            <p>The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order</p>
+            <div class="flex-container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+            <h3>The flex-flow Property</h3>
+            <p>The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.</p>
+            <h3>The justify-content Property</h3>
+            <p>The justify-content property is used to align the flex items</p>
+            <h3>The align-items Property</h3>
+            <p>The align-items property is used to align the flex items</p>
+            <ol>
+                <li>the center value aligns the flex items in the middle of the container</li>
+                <li>The flex-start value aligns the flex items at the top of the container:</li>
+                <li>The flex-end value aligns the flex items at the bottom of the containe</li>
+                <li>The stretch value stretches the flex items to fill the container (this is default)</li>
+                <li>The baseline value aligns the flex items such as their baselines aligns</li>
+            </ol>
+            <h3>The align-content Property</h3>
+            <p>The align-content property is used to align the flex lines</p>
+            <ol>
+                <li>The space-around value displays the flex lines with space before, between, and after them</li>
+                <li>The stretch value stretches the flex lines to take up the remaining space (this is default)</li>
+                <li>The center value displays display the flex lines in the middle of the containe</li>
+                <li>The flex-start value displays the flex lines at the start of the container</li>
+                <li>The flex-end value displays the flex lines at the end of the container</li>
+            </ol>
+            <!-- flexbox child elements -->
+            <h2>CSS Flex Items
+                <h3>Child Elements (Items)</h3>
+                <p>The direct child elements of a flex container automatically becomes flexible (flex) items</p>
+            </h2>
+            <div class="flex-container" style="background-color:blue ; color: aqua;">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <h2>The flex item properties are</h2>
+            <ol>
+                <li>order - The order property specifies the order of the flex items</li>
+            <li>flex-grow- The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items</li>
+            <li>flex-shrink- The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items</li>
+            <li>flex-basis -The flex-basis property specifies the initial length of a flex item</li>
+            <li>flex-The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties</li>
+            <li>align-self-The align-self property specifies the alignment for the selected item inside the flexible container.
+
+                The align-self property overrides the default alignment set by the container's align-items property.</li>
+            </ol>
+            <!-- flex properties -->
+            <h5>flex properties</h5>
+            <div class="grid-container" style="display:grid; background-color: yellowgreen; grid-template-columns: auto auto;" >
+                <div class="grid-item">PROPERTY</div>
+                <div class="grid-item">DESCRPTION</div>
+                <div class="grid-item">Align-self</div>
+                <div class="grid-item">Specifies the alignment for a flex item (overrides the flex container's align-items property)</div>
+                <div class="grid-item">Flex</div>
+                <div class="grid-item">A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</div>
+                <div class="grid-item">Flex-basis</div>
+                <div class="grid-item">Specifies the initial length of a flex item</div>
+                <div class="grid-item">Flex-grow</div>
+                <div class="grid-item">Specifies how much a flex item will grow relative to the rest of the flex items inside the same container</div>
+                <div class="grid-item">Flex-shrink</div>
+                <div class="grid-item">Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container</div>
+                <div class="grid-item">Order</div>
+                <div class="grid-item">Specifies the order of the flex items inside the same container</div>
+                
+                
+            </div>
+            
+            
+
+</body>
+</html>
